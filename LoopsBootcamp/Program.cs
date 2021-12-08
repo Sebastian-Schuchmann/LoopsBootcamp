@@ -1,5 +1,6 @@
 ﻿
-Console.WriteLine(SumNumbers(new []{1, 2, 3}));
+
+using LoopsBootcamp;
 
 int SumNumbers(int[] numbers)
 {
@@ -39,4 +40,14 @@ int[] GenerateUniqueRandomNumbers(int count, int min, int max)
     return new[] {1, 5, 8};
 }
 
+void PrintTicTacToeBoard(Player[,] board)
+{
+    Console.WriteLine("Woooow!!");
+}
 
+PrintTicTacToeBoard(new Player[,]
+{
+    {Player.X, Player.D, Player.X},
+    {Player.O, Player.O, Player.O},
+    {Player.X, Player.X, Player.X}
+});

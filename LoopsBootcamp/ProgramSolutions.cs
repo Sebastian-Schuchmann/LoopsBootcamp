@@ -1,4 +1,6 @@
-﻿public static class Solution
+﻿using LoopsBootcamp;
+
+public static class Solution
 {
     public static int SumNumbers(int[] numbers)
     {
@@ -93,6 +95,22 @@
 
         return generatedNumbers.ToArray();
     }
+    
+    public static void PrintTicTacToeBoard(Player[,] board)
+    {
+        for (int x = 0; x < 3; x++)
+        {
+            for (int y = 0; y < 3; y++)
+            {
+                var toPrint = board[x, y] == Player.D ? " " : board[x, y].ToString();
+                Console.Write($"[{toPrint}]");
+            }
+        
+            Console.WriteLine();
+        }
+    }
 }
+
+
 
 
